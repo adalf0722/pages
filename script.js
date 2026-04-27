@@ -239,8 +239,39 @@ function initMagneticCards() {
   }
 }
 
+/* ── Hero Name Char Split ── */
+function initHeroNameBounce() {
+  const nameEl = document.querySelector('.hero-name');
+  if (!nameEl) return;
+
+  // Collect nodes: text before <span> and the <span> itself
+  const rawText = nameEl.childNodes[0].textContent; // "吳小兵 "
+  const accentSpan = nameEl.querySelector('span');   // "· Adalf Wu"
+  const accentText = accentSpan.textContent;
+
+  nameEl.innerHTML = '';
+
+  const wrapChars = (text, isAccent) => {
+    [...text].forEach(ch => {
+      const span = document.createElement('span');
+      span.className = 'char' + (isAccent ? ' accent-char' : '');
+      span.textContent = ch;
+      span.addEventListener('mouseenter', () => {
+        span.classList.remove('pop');
+        void span.offsetWidth; // reflow to restart animation
+        span.classList.add('pop');
+      });
+      nameEl.appendChild(span);
+    });
+  };
+
+  wrapChars(rawText, false);
+  wrapChars(accentText, true);
+}
+
 /* ── Init ── */
 renderProjects();
 initFloatingIcons();
 initParticles();
 initMagneticCards();
+initHeroNameBounce();
