@@ -37,6 +37,16 @@ const projects = [
     tag: "tool",
     image: "assets/pdf2word.webp",
     demo: "https://pdf2word-oe9v.onrender.com/"
+  },
+  {
+    name: "Insider News",
+    nameEn: "Insider News",
+    desc: "新聞聚合，快速掌握業界動態與公司最新消息",
+    descEn: "Internal news aggregator  — stay on top of industry updates",
+    tag: "tool",
+    image: "assets/insider_news.webp",
+    demo: "https://gamecorp-insider-news.pages.dev/",
+    repo: "https://github.com/adalf0722/insider-news"
   }
   // 新增專案：在這裡加一筆物件即可
   // { name: "", nameEn: "", desc: "", descEn: "", tag: "tool"|"toy", emoji: "✨", image: "assets/xxx.webp", demo: "...", repo: "..." }
