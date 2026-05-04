@@ -11,6 +11,16 @@ const projects = [
     repo: "https://github.com/adalf0722/imgduck"
   },
   {
+    name: "Style",
+    nameEn: "Style",
+    desc: "樣式展示與調整工具，快速預覽不同視覺設定",
+    descEn: "A style preview tool for quickly exploring visual settings",
+    tag: "tool",
+    image: "assets/style.webp",
+    demo: "https://adalf0722.github.io/style/",
+    repo: "https://github.com/adalf0722/style"
+  },
+  {
     name: "XML Diff Tool",
     nameEn: "XML Diff Tool",
     desc: "快速比較兩份 XML 文件的差異，一眼看出哪裡不同",
@@ -30,15 +40,6 @@ const projects = [
     demo: "https://prompts.shaq-adalf.workers.dev/"
   },
   {
-    name: "PDF 轉 Word",
-    nameEn: "PDF to Word",
-    desc: "免費線上工具，將 PDF 一鍵轉換成可編輯的 Word 文件",
-    descEn: "Free online converter — turn any PDF into an editable .docx in one click",
-    tag: "tool",
-    image: "assets/pdf2word.webp",
-    demo: "https://pdf2word-oe9v.onrender.com/"
-  },
-  {
     name: "Insider News",
     nameEn: "Insider News",
     desc: "新聞聚合，快速掌握業界動態與公司最新消息",
@@ -47,6 +48,15 @@ const projects = [
     image: "assets/insider_news.webp",
     demo: "https://gamecorp-insider-news.pages.dev/",
     repo: "https://github.com/adalf0722/insider-news"
+  },
+  {
+    name: "PDF 轉 Word",
+    nameEn: "PDF to Word",
+    desc: "免費線上工具，將 PDF 一鍵轉換成可編輯的 Word 文件",
+    descEn: "Free online converter — turn any PDF into an editable .docx in one click",
+    tag: "tool",
+    image: "assets/pdf2word.webp",
+    demo: "https://pdf2word-oe9v.onrender.com/"
   }
   // 新增專案：在這裡加一筆物件即可
   // { name: "", nameEn: "", desc: "", descEn: "", tag: "tool"|"toy", emoji: "✨", image: "assets/xxx.webp", demo: "...", repo: "..." }

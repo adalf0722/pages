@@ -3,3 +3,7 @@
 .cursor/
 .claude/
 docs/
+.vscode/settings.json
+.specstory/cli/config.toml
+.specstory/.project.json
+.gitignore
